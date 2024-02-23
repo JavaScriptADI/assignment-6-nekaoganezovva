@@ -1,14 +1,14 @@
 
-const cities = getCities();
-const citiesTable = document.getElementById('cities-table');
+const cities = getCities(); 
+const citiesTable = document.getElementById('cities-table'); 
 let sorted = false;
 
-cities.forEach(({ name, population }) => {
+cities.forEach(({ name, population }) => { 
     const tr = document.createElement('tr');
 
-    tr.innerHTML = (`<td>${name}</td>
-    <td>${population}</td>`)
-    citiesTable.querySelector('tbody').appendChild(tr);
+    tr.innerHTML = (`<td>${name}</td> 
+    <td>${population}</td>`) 
+    citiesTable.querySelector('tbody').appendChild(tr); 
 })
 
 const header = citiesTable.querySelectorAll('th')[1];
